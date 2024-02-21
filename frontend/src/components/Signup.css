@@ -1,0 +1,90 @@
+/* Signup.css */
+
+.signup-container {
+    background-image: url('../assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content; /* Adjust container width to fit content */
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.title {
+    font-size: 36px;
+    padding-top: 50px;
+    margin-bottom: 10px; /* Reduce margin between title and signup heading */
+    color: #ffffff;
+    text-align: center; /* Center align the title */
+}
+
+.signup-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.signup-form {
+    background-image: linear-gradient(to bottom right, rgba(61, 80, 88, 0.8), rgba(84, 62, 87, 0.8));
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(192, 192, 192, 0.3);
+    max-width: 400px;
+    width: 90%;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.signup-form input,
+.signup-form button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.signup-form button {
+    background-color: #474269;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+    background-color: #348d43;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 600px) {
+    .signup-form {
+        max-width: 90%; /* Adjust max-width for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .title {
+        font-size: 24px; /* Adjust title font size for smaller screens */
+    }
+}
